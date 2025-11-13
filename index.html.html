@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Label</title>
+</head>
+<body>
+  <h1>Mon premier formulaire HTML5</h1>
+  <form method="post" action="destination.html">
+    <fieldset>
+      <legend><h2>Vos coordonnées</h2></legend>
+
+      <label>Nom*: <input type="text" name="nom" placeholder="votre nom" required></label><br>
+      <label>Prénom*: <input type="text" name="prenom" placeholder="votre prénom" required></label><br>
+      <label>Date de naissance: <input type="date" name="date" required></label><br>
+      <label>Mail*: <input type="email" id="email" required></label><br>
+      <label>Votre site*: <input type="text" name="site" value="http://www." required></label><br>
+      <label>Code: <input type="password" name="code" maxlength="8" pattern="[A-Z]{2}[1-9]{3}[a-z]{2}" required></label><br>
+
+      <input type="radio" name="sex" id="homme" value="homme"><label for="homme">Homme</label><br>
+      <input type="radio" name="sex" id="femme" value="femme"><label for="femme">Femme</label><br>
+
+      <label>Dans quel pays habitez-vous ?</label><br>
+      <select name="pays" required>
+        <option disabled selected>votre pays</option>
+        <optgroup label="Europe">
+          <option>France</option>
+          <option>Italie</option>
+          <option>Allemagne</option>
+        </optgroup>
+        <optgroup label="amerique">
+            <option>USA</option>
+            <option>canada</option>
+            <option>argentina</option>
+            <option>mexique</option>
+        </optgroup>
+        <optgroup label="autres">
+            <option>afrique</option>
+            <option>asie</option>
+            <option>oceanie</option>
+            <option>australie</option>
+        </optgroup>
+      </select>
+    </fieldset>
+  </form>
+</body>
+</html>
